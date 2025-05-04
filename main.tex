@@ -20,9 +20,9 @@
     latim,
     brazil                  % o último idioma é o principal do documento
     ]{article}
-\usepackage{babel}                  % hifenização em português
-\usepackage{fontenc}            % Seleção de códigos de fonte.
-\usepackage[utf8]{inputenc}         % Codificação do documento (conversão automática dos acentos)
+\usepackage[useregional]{datetime2}  % hifenização em português
+% \usepackage{fontenc}                % Seleção de códigos de fonte.
+% \usepackage[utf8]{inputenc}         % Codificação do documento (conversão automática dos acentos)
 \usepackage{float}                  % flutuação do texto/figura
 \usepackage{graphicx}               % Inclusão de gráficos
 \usepackage{color}                  % Controle das cores
@@ -41,7 +41,7 @@
 %------------------------------------------------------------------------
 \usepackage{setspace}               % Para permitir espaçamento simples, 1 1/2 e duplo
 \usepackage[a4paper,left=3cm,top=3cm,right=2cm,bottom=2cm]{geometry}
-\setmainfont{Luxurious Roman}
+\setmainfont{Times New Roman}
 
 % ---------------------
 % Pacotes ADICIONAIS
@@ -69,11 +69,12 @@
 \usepackage[brazilian,hyperpageref]{backref}    % Paginas com as citações na bibl
 \usepackage[alf]{abntex2cite}                % Citações padrão ABNT (alfa) e/ou (numéricas)
 \usepackage{footmisc}
+\usepackage{csquotes}
+\usepackage[framemethod=TikZ]{mdframed}
 % ---------------------
 % ---------------------
 % Configurações
 % ---------------------
-
 \DTMlangsetup{showdayofmonth=false}          % Para ocultar o dia do mês.
 
 \hypersetup{
